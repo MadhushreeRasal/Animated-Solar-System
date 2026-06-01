@@ -1,0 +1,164 @@
+/*General classes */
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: black url('images/background.jpg') no-repeat fixed center/cover;
+	color:white;
+	text-align:center;
+}
+
+header{
+	margin:1vh;
+}
+img{
+	border-radius:50%;
+}
+
+/* Solar system styleing */
+.solar-system{
+	position:relative;
+	display:flex;
+	top:300px;
+	justify-content:center;
+	align-items:center;
+	width:90vw;
+	height:100vh;
+}
+
+.orbit{
+	position:absolute;
+	border-radius:50%;
+	border:1px solid grey;
+}
+
+.planet{
+	position:absolute;
+	border-radius:50%;
+	width:50px;
+	top:50%;
+	right:-20px;
+}
+
+/* Sun and orbits */
+
+.sun{
+	width:200px;
+	position:absolute;
+	animation-name:planets;
+	animation:rotate 4s linear infinite;
+}
+
+.mercury-orbit{
+	width:300px;
+	height:300px;
+	animation:rotate 6s linear infinite;
+}
+
+.venus-orbit{
+	width:400px;
+	height:400px;
+	animation:rotate 8s linear infinite;
+}
+
+.earth-orbit{
+	width:500px;
+	height:500px;
+	animation:rotate 10s linear infinite;
+}
+.earth{
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:50%;
+	right:-20px;
+	animation-name:planets;
+	animation:rotate 4s linear infinite;
+}
+.earth-img{
+	width:50px;
+	height:50px;
+}
+.moon-orbit{
+	width:100px;
+	height:100px;
+	position:absolute;
+	border:1px solid grey;
+	animation:rotate 1.3s linear infinite;
+	border-radius:50%;
+	top:-50%;
+	right:-50%;
+}
+.moon{
+	width:25px;
+	height:25px;
+	border-radius:50%;
+	right:0px;
+	position:absolute;
+	animation:planets 2s linear infinite;
+	animation:rotate 4s linear infinite;
+}
+
+.mars-orbit{
+	width:600px;
+	height:600px;
+	animation:rotate 11s linear infinite;
+}
+
+.jupiter-orbit{
+	width:700px;
+	height:700px;
+	animation:rotate 9s linear infinite;
+}
+
+.saturn-orbit{
+	width:800px;
+	height:800px;
+	animation:rotate 13s linear infinite;
+}
+
+.uranus-orbit{
+	width:900px;
+	height:900px;
+	animation:rotate 14.3s linear infinite;
+}
+
+.neptune-orbit{
+	width:1000px;
+	height:1000px;
+	animation:rotate 16s linear infinite;
+}
+
+/* Planets */
+.mercury{
+	width:30px;
+}
+.venus{
+	width:35px;
+}
+.mars{
+	width:45px;
+}
+.jupiter{
+	width:60px;
+}
+.uranus{
+	width:40px;
+}
+/* Rotation and animation*/
+
+.rotate-planets{
+	animation-name:planets;
+	animation:rotate 3.8s linear infinite;
+}
+@keyframes rotate{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+@keyframes planets{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
